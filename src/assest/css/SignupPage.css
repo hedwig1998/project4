@@ -1,0 +1,108 @@
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9; /* Nền tổng quan của trang */
+  padding: 20px; /* Thêm khoảng cách trên mobile */
+  box-sizing: border-box;
+}
+
+.signup-container {
+  background-color: #343a40; /* Nền đen cho container */
+  color: #fb5b21; /* Màu chữ cam */
+  padding: 40px 60px; /* Tăng padding ngang */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  text-align: center;
+  max-width: 800px; /* Tăng chiều ngang */
+  width: 100%;
+  min-height: 70vh; /* Đảm bảo chiều cao hợp lý */
+}
+
+.signup-title {
+  font-weight: bold;
+  font-size: 32px; /* Tăng cỡ chữ để cân đối */
+  margin-bottom: 20px;
+  color: #fb5b21; /* Màu cam cho tiêu đề */
+}
+
+.signup-form .form-group {
+  margin-bottom: 15px; /* Giảm khoảng cách giữa các trường */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #ffffff; /* Màu cam cho label */
+  font-style: italic;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #fff; /* Nền trắng cho ô input */
+  color: #000; /* Màu chữ đen */
+  border: none; /* Không có viền */
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.signup-form input::placeholder,
+.signup-form select::placeholder {
+  color: #aaa; /* Màu xám cho placeholder */
+  font-style: italic; /* Làm nghiêng để nhấn mạnh */
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  outline: 2px solid #fb5b21; /* Viền cam khi focus */
+}
+
+.signup-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #fb5b21; /* Nút cam */
+  color: white; /* Chữ trắng */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.signup-button:hover {
+  background-color: #e64a19; /* Màu cam đậm khi hover */
+}
+
+.signup-prompt {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #fb5b21; /* Màu cam cho phần nhắc */
+  text-align: center;
+}
+
+.signup-link {
+  background-color: #FB5B21; /* Nút cam */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.signup-link:hover {
+  background-color: #ff2c2c; /* Màu đỏ khi hover */
+  text-decoration: none;
+}

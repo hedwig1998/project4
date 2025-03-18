@@ -1,0 +1,80 @@
+.top-up-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .top-up-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .top-up-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+  }
+
+  .top-up-card h2 {
+    flex: 1;
+    text-align: left;
+  }
+
+  .top-up-card h3 {
+    font-size: 1rem;
+    margin: 0;
+    align-self: center;
+  }
+
+  .top-up-card .right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .top-up-button {
+    padding: 8px 15px;
+    background-color: #fb5b21;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .top-up-button:hover {
+    background-color: #ff7c47;
+  }
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .back-button {
+    margin-top: 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #c82333;
+  }

@@ -1,0 +1,50 @@
+/* Container chính */
+.user-info-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tiêu đề */
+  .user-info-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Card thông tin người dùng */
+  .user-info-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-info-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .user-info-card strong {
+    color: #333;
+  }
+  
+  /* Loading */
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Error */
+  .error {
+    text-align: center;
+    font-size: 18px;
+    color: #ff4d4f;
+  }
