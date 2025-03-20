@@ -1,45 +1,48 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import '../../assest/css/bootstrap.min.css';
 
 const Header = () => {
   const navigate = useNavigate();
-  const [userInfo, setUserInfo] = useState(null); // Lưu thông tin người dùng
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Quản lý trạng thái dropdown
+  const location = useLocation(); 
+  const [userInfo, setUserInfo] = useState(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // Hàm lấy thông tin người dùng từ API
   const fetchUserInfo = async () => {
-    const token = localStorage.getItem('token'); // Lấy token từ localStorage
-    if (!token) return; // Nếu không có token, thoát khỏi hàm
+    const token = localStorage.getItem('token');
+    if (!token) return;
 
     try {
       const response = await fetch('http://localhost:8080/trainingSouls/users/getMyInfo', {
         method: 'GET',
         headers: {
-          Authorization: `Bearer ${token}`, // Gửi token trong header
+          Authorization: `Bearer ${token}`,
         },
       });
 
       const data = await response.json();
       if (data.code === 0 && data.result) {
-        setUserInfo(data.result); // Lưu thông tin người dùng vào state
+        setUserInfo(data.result);
       }
     } catch (error) {
       console.error('Error fetching user info:', error);
     }
   };
 
-  // Hàm xử lý logout
   const handleLogout = () => {
-    localStorage.removeItem('token'); 
+    localStorage.removeItem('token');
     setUserInfo(null);
     navigate('/login');
   };
 
-  // Gọi API khi component được render
   useEffect(() => {
     fetchUserInfo();
   }, []);
+
+  // kiểm tra xem nav-item có active không
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
 
   return (
     <div className="container-fluid bg-dark px-0">
@@ -104,25 +107,25 @@ const Header = () => {
             </button>
             <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
               <div className="navbar-nav mr-auto py-0">
-                <a href="/" className="nav-item nav-link active">
+                <a href="/" className={`nav-item nav-link ${isActive('/') ? 'active' : ''}`}>
                   Home
                 </a>
-                <a href="/about" className="nav-item nav-link">
+                <a href="/about" className={`nav-item nav-link ${isActive('/about') ? 'active' : ''}`}>
                   About
                 </a>
-                <a href="/class" className="nav-item nav-link">
+                <a href="/class" className={`nav-item nav-link ${isActive('/class') ? 'active' : ''}`}>
                   Classes
                 </a>
-                <a href="/trainer" className="nav-item nav-link">
+                <a href="/trainer" className={`nav-item nav-link ${isActive('/trainer') ? 'active' : ''}`}>
                   Trainers
                 </a>
-                <a href="/blog" className="nav-item nav-link">
+                <a href="/blog" className={`nav-item nav-link ${isActive('/blog') ? 'active' : ''}`}>
                   Blog Grid
                 </a>
-                <a href="/rank" className="nav-item nav-link">
+                <a href="/rank" className={`nav-item nav-link ${isActive('/rank') ? 'active' : ''}`}>
                   Your Rank
                 </a>
-                <a href="/subscription" className="nav-item nav-link">
+                <a href="/subscription" className={`nav-item nav-link ${isActive('/subscription') ? 'active' : ''}`}>
                   Subscription
                 </a>
               </div>
