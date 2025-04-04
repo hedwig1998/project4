@@ -9,7 +9,7 @@ const UserInfo = () => {
     if (!token) return; // Nếu không có token, thoát khỏi hàm
 
     try {
-      const response = await fetch('http://localhost:8080/trainingSouls/users/getMyInfo', {
+      const response = await fetch('http://54.251.220.228:8080/trainingSouls/users/getMyInfo', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`, // Gửi token trong header

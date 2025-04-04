@@ -20,7 +20,7 @@ const SubscriptionPlans = () => {
   useEffect(() => {
     const fetchPlans = async () => {
       try {
-        const response = await fetch("http://localhost:8080/trainingSouls/items");
+        const response = await fetch("http://54.251.220.228:8080/trainingSouls/items");
         const data = await response.json();
         setPlans(data);
       } catch (error) {
@@ -40,7 +40,7 @@ const SubscriptionPlans = () => {
       if (!token) return;
 
       try {
-        const response = await fetch("http://localhost:8080/trainingSouls/users/getMyInfo", {
+        const response = await fetch("http://54.251.220.228:8080/trainingSouls/users/getMyInfo", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -87,7 +87,7 @@ const SubscriptionPlans = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/trainingSouls/purchase/${selectedPlan.itemId}`,
+        `http://54.251.220.228:8080/trainingSouls/purchase/${selectedPlan.itemId}`,
         {
           method: "POST",
           headers: {

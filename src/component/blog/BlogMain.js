@@ -12,7 +12,7 @@ const BlogMain = () => {
 
   // API hiển thị danh sách bài viết
   useEffect(() => {
-    fetch('http://localhost:8080/trainingSouls/posts/getAllPost')
+    fetch('http://54.251.220.228:8080/trainingSouls/posts/getAllPost')
       .then(response => response.json())
       .then(data => {
         setPosts(data);
@@ -23,7 +23,7 @@ const BlogMain = () => {
 
 
   useEffect(() => {
-    fetch('http://localhost:8080/trainingSouls/posts/getAllPost')
+    fetch('http://54.251.220.228:8080/trainingSouls/posts/getAllPost')
       .then((response) => response.json())
       .then((data) => {
         const sortedPosts = data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));

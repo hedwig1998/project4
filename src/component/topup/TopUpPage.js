@@ -18,7 +18,7 @@ const TopUpPage = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/trainingSouls/payment/vn-pay?amount=${amount}`,
+        `http://54.251.220.228:8080/trainingSouls/payment/vn-pay?amount=${amount}`,
         {
           method: "GET",
           headers: {

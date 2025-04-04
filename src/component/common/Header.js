@@ -13,7 +13,7 @@ const Header = () => {
     if (!token) return;
 
     try {
-      const response = await fetch('http://localhost:8080/trainingSouls/users/getMyInfo', {
+      const response = await fetch('http://54.251.220.228:8080/trainingSouls/users/getMyInfo', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,

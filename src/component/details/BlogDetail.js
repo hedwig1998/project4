@@ -34,7 +34,7 @@ const BlogDetail = () => {
 
   // Gọi API để lấy dữ liệu bài đăng
   useEffect(() => {
-    fetch(`http://localhost:8080/trainingSouls/posts/${postId}`)
+    fetch(`http://54.251.220.228:8080/trainingSouls/posts/${postId}`)
       .then((response) => response.json())
       .then((data) => {
         setPost(data);
@@ -76,7 +76,6 @@ const BlogDetail = () => {
                 {/* Hiển thị ảnh, video và nội dung theo thứ tự */}
                 {post.imgUrl.map((img, index) => (
                   <React.Fragment key={index}>
-                    {/* Hiển thị ảnh */}
                     <img
                       src={img}
                       alt={`Ảnh ${index + 1}`}
@@ -84,14 +83,12 @@ const BlogDetail = () => {
                       style={{width: "100%"}}
                     />
 
-                    {/* Hiển thị video nếu có */}
                     {post.videoUrl[index] && (
                       <div className="mb-4">
                         <YouTubeVideo videoUrl={post.videoUrl[index]} />
                       </div>
                     )}
 
-                    {/* Hiển thị nội dung nếu có */}
                     {post.content[index] && (
                       <div className="t p-4 rounded mb-4">
                         <p style={{ whiteSpace: 'pre-line', color: "black" }}>{post.content[index]}</p>

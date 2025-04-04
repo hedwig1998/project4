@@ -12,7 +12,7 @@ const LoginPage = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8080/trainingSouls/auth/login', {
+      const response = await fetch('http://54.251.220.228:8080/trainingSouls/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -36,7 +36,7 @@ const SignupPage = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:8080/trainingSouls/users/create-user', {
+      const response = await fetch('http://54.251.220.228:8080/trainingSouls/users/create-user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
