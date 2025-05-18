@@ -23,12 +23,9 @@ const LoginPage = () => {
       const data = await response.json();
 
       if (data.code === 0 && data.result.success) {
-        // Lưu token vào localStorage
         localStorage.setItem('token', data.result.token);
-        // Chuyển hướng đến trang Home
         navigate('/');
       } else {
-        // Xử lý lỗi đăng nhập
         setError('Invalid email or password');
       }
     } catch (error) {

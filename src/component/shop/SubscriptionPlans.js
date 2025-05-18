@@ -157,6 +157,7 @@ const SubscriptionPlans = () => {
             <div key={plan.itemId} className="plan-card">
               <h3 className="plan-name">{plan.name}</h3>
               <p className="plan-description">{plan.description}</p>
+              <p>Duration Day: {plan.durationInDays}</p>
               <div className="plan-price">
                 Points Required: {plan.pointsRequired}
               </div>

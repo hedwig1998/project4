@@ -36,6 +36,7 @@ const UserInfo = () => {
         <div className="user-info-card">
           <p><strong>Tên:</strong> {userInfo.name}</p>
           <p><strong>Email:</strong> {userInfo.email}</p>
+          <p><strong>Account Type:</strong> {userInfo.accountType}</p>
           <p><strong>Coin:</strong> {userInfo.points}</p>
           <p><strong>Level:</strong> {userInfo.level || 'Không có thông tin'}</p>
         </div>

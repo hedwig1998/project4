@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <>
@@ -24,18 +24,18 @@ const Footer = () => {
                   <p className="mb-0">+012 345 67890</p>
                 </div>
                 <div className="d-flex mt-4">
-                  <a className="btn btn-primary btn-square rounded-circle me-2" href="#">
+                  <Link className="btn btn-primary btn-square rounded-circle me-2" to={"/"}>
                     <i className="fab fa-twitter"></i>
-                  </a>
-                  <a className="btn btn-primary btn-square rounded-circle me-2" href="#">
+                  </Link>
+                  <Link className="btn btn-primary btn-square rounded-circle me-2" to={"/"}>
                     <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a className="btn btn-primary btn-square rounded-circle me-2" href="#">
+                  </Link>
+                  <Link className="btn btn-primary btn-square rounded-circle me-2" to={"/"}>
                     <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a className="btn btn-primary btn-square rounded-circle" href="#">
+                  </Link>
+                  <Link className="btn btn-primary btn-square rounded-circle" to={"/"}>
                     <i className="fab fa-instagram"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -43,24 +43,24 @@ const Footer = () => {
               <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                 <h4 className="text-uppercase text-light mb-4">Quick Links</h4>
                 <div className="d-flex flex-column justify-content-start">
-                  <a className="text-secondary mb-2" href="#">
+                  <Link className="text-secondary mb-2" to={"/home"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Home
-                  </a>
-                  <a className="text-secondary mb-2" href="#">
+                  </Link>
+                  <Link className="text-secondary mb-2" to={"/about"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>About Us
-                  </a>
-                  <a className="text-secondary mb-2" href="#">
+                  </Link>
+                  <Link className="text-secondary mb-2" to={"/class"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Class Schedule
-                  </a>
-                  <a className="text-secondary mb-2" href="#">
+                  </Link>
+                  <Link className="text-secondary mb-2" to={"/trainer"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Our Trainers
-                  </a>
-                  <a className="text-secondary mb-2" href="#">
+                  </Link>
+                  <Link className="text-secondary mb-2" to={"/blog"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Latest Blog
-                  </a>
-                  <a className="text-secondary" href="/contact">
+                  </Link>
+                  <Link className="text-secondary" to={"/contact"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Contact Us
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -68,24 +68,24 @@ const Footer = () => {
               <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                 <h4 className="text-uppercase text-light mb-4">Popular Links</h4>
                 <div className="d-flex flex-column justify-content-start">
-                  <a className="text-secondary mb-2" href="#">
+                  <Link className="text-secondary mb-2" to={"/home"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Home
-                  </a>
-                  <a className="text-secondary mb-2" href="#">
+                  </Link>
+                  <Link className="text-secondary mb-2" to={"/about"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>About Us
-                  </a>
-                  <a className="text-secondary mb-2" href="#">
+                  </Link>
+                  <Link className="text-secondary mb-2" to={"/class"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Class Schedule
-                  </a>
-                  <a className="text-secondary mb-2" href="#">
+                  </Link>
+                  <Link className="text-secondary mb-2" to={"/trainer"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Our Trainers
-                  </a>
-                  <a className="text-secondary mb-2" href="#">
+                  </Link>
+                  <Link className="text-secondary mb-2" to={"/blog"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Latest Blog
-                  </a>
-                  <a className="text-secondary" href="/contact">
+                  </Link>
+                  <Link className="text-secondary" to={"/contact"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Contact Us
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -116,14 +116,7 @@ const Footer = () => {
           <div className="col-lg-8">
             <div className="py-lg-4 text-center">
               <p className="text-secondary mb-0">
-                &copy; <a className="text-light fw-bold" href="#">Your Site Name</a>. All Rights Reserved.
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="py-lg-4 text-center credit">
-              <p className="text-light mb-0">
-                Designed by <a className="text-light fw-bold" href="https://htmlcodex.com">HTML Codex</a>
+                &copy; <a className="text-light fw-bold" href="#">Team 2</a>. All Rights Reserved.
               </p>
             </div>
           </div>

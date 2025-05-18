@@ -20,14 +20,11 @@ const AboutSection = () => {
             <h1 className="display-3 text-uppercase mb-0">Welcome to Gymster</h1>
           </div>
           <h4 className="text-body mb-4">
-            Diam dolor diam ipsum tempor sit. Clita erat ipsum et lorem stet no labore lorem sit clita duo justo magna
-            dolore
+            At Gymster, we're more than just a gym; we're a vibrant community dedicated to empowering you on your unique fitness journey. 
+            We believe that achieving your health goals should be an inspiring and enjoyable experience. 
+            Our mission is to provide a supportive, motivating, and state-of-the-art environment where everyone, from beginners to seasoned athletes, can thrive, push their limits, and discover their strength. 
+            Join us and become part of a family that celebrates every step of your progress.
           </h4>
-          <p className="mb-4">
-            Nonumy erat diam duo labore clita. Sit magna ipsum dolor sed ea duo at ut. Tempor sit lorem sit magna ipsum
-            duo. Sit eos dolor ut sea rebum, diam sea rebum lorem kasd ut ipsum dolor est ipsum. Et stet amet justo amet
-            clita erat, ipsum sed at ipsum eirmod labore lorem.
-          </p>
           <div className="rounded bg-dark p-5">
             <ul className="nav nav-pills justify-content-between mb-3">
               <li className="nav-item w-50">
@@ -52,18 +49,18 @@ const AboutSection = () => {
             <div className="tab-content">
               <div className="tab-pane fade show active" id="pills-1">
                 <p className="text-secondary mb-0">
-                  Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua
-                  sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et
-                  sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod,
-                  dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna
+                  We are your partners in health and fitness, committed to providing an exceptional gym experience. 
+                  At Gymster, our focus is on creating a positive and results-oriented atmosphere where you can achieve your personal best. 
+                  We offer top-quality equipment, expert trainers, and a motivating environment designed to help you succeed, no matter your current fitness level. 
+                  Start your journey to a stronger, healthier you with us today.
                 </p>
               </div>
               <div className="tab-pane fade" id="pills-2">
                 <p className="text-secondary mb-0">
-                  Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua
-                  sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et
-                  sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod,
-                  dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna
+                  Work out on the latest and most effective fitness equipment in a clean, modern, and energizing space.
+                  Our experienced trainers offer personalized support and guidance to ensure you train smart and see results.
+                  Enjoy a wide selection of group fitness classes and training programs tailored to different interests and abilities.
+                  We're dedicated to helping you achieve tangible fitness outcomes and build sustainable healthy habits.
                 </p>
               </div>
             </div>

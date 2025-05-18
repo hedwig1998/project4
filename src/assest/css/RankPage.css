@@ -1,0 +1,32 @@
+.gold-rank {
+    background-color: rgba(255, 215, 0, 0.3);
+    /* transform: scale(1.02); */
+    position: relative;
+    /* border: 2px solid gold; */
+}
+.gold-rank td {
+    font-weight: bold;
+    color: #FB5B21 !important;
+}
+.silver-rank {
+    background-color: rgba(192, 192, 192, 0.3);
+    position: relative;
+    /* border: 2px solid silver; */
+}
+.silver-rank td {
+    color: #FB5B21 !important;
+}
+.bronze-rank {
+    background-color: rgba(205, 127, 50, 0.3);
+    position: relative;
+    /* border: 2px solid #cd7f32; */
+}
+.bronze-rank td {
+    color: #FB5B21 !important;
+}
+.normal-rank {
+    /* background-color: rgba(33, 37, 41, 0.7); */
+}
+.rankingTable {
+    text-align: center;
+}

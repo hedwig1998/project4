@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import '../../assest/css/bootstrap.min.css';
 
 const Header = () => {
@@ -73,21 +73,21 @@ const Header = () => {
             </div>
             <div className="col-lg-5 px-5 text-end">
               <div className="d-inline-flex align-items-center py-2">
-                <a className="btn btn-light btn-square rounded-circle me-2" href="#">
+                <Link className="btn btn-light btn-square rounded-circle me-2" to={"/"}>
                   <i className="fab fa-facebook-f"></i>
-                </a>
-                <a className="btn btn-light btn-square rounded-circle me-2" href="#">
+                </Link>
+                <Link className="btn btn-light btn-square rounded-circle me-2" to={"/"}>
                   <i className="fab fa-twitter"></i>
-                </a>
-                <a className="btn btn-light btn-square rounded-circle me-2" href="#">
+                </Link>
+                <Link className="btn btn-light btn-square rounded-circle me-2" to={"/"}>
                   <i className="fab fa-linkedin-in"></i>
-                </a>
-                <a className="btn btn-light btn-square rounded-circle me-2" href="#">
+                </Link>
+                <Link className="btn btn-light btn-square rounded-circle me-2" to={"/"}>
                   <i className="fab fa-instagram"></i>
-                </a>
-                <a className="btn btn-light btn-square rounded-circle" href="#">
+                </Link>
+                <Link className="btn btn-light btn-square rounded-circle" to={"/"}>
                   <i className="fab fa-youtube"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -107,27 +107,27 @@ const Header = () => {
             </button>
             <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
               <div className="navbar-nav mr-auto py-0">
-                <a href="/" className={`nav-item nav-link ${isActive('/') ? 'active' : ''}`}>
+                <Link to={"/"} className={`nav-item nav-link ${isActive('/') ? 'active' : ''}`}>
                   Home
-                </a>
-                <a href="/about" className={`nav-item nav-link ${isActive('/about') ? 'active' : ''}`}>
+                </Link>
+                <Link to={"/about"} className={`nav-item nav-link ${isActive('/about') ? 'active' : ''}`}>
                   About
-                </a>
-                <a href="/class" className={`nav-item nav-link ${isActive('/class') ? 'active' : ''}`}>
+                </Link>
+                <Link to={"/class"} className={`nav-item nav-link ${isActive('/class') ? 'active' : ''}`}>
                   Classes
-                </a>
-                <a href="/trainer" className={`nav-item nav-link ${isActive('/trainer') ? 'active' : ''}`}>
+                </Link>
+                <Link to={"/trainer"} className={`nav-item nav-link ${isActive('/trainer') ? 'active' : ''}`}>
                   Trainers
-                </a>
-                <a href="/blog" className={`nav-item nav-link ${isActive('/blog') ? 'active' : ''}`}>
+                </Link>
+                <Link to={"/blog"} className={`nav-item nav-link ${isActive('/blog') ? 'active' : ''}`}>
                   Blog Grid
-                </a>
-                <a href="/rank" className={`nav-item nav-link ${isActive('/rank') ? 'active' : ''}`}>
+                </Link>
+                <Link to={"/rank"} className={`nav-item nav-link ${isActive('/rank') ? 'active' : ''}`}>
                   Your Rank
-                </a>
-                <a href="/subscription" className={`nav-item nav-link ${isActive('/subscription') ? 'active' : ''}`}>
+                </Link>
+                <Link to={"/subscription"} className={`nav-item nav-link ${isActive('/subscription') ? 'active' : ''}`}>
                   Subscription
-                </a>
+                </Link>
               </div>
 
               {userInfo ? (
@@ -154,9 +154,9 @@ const Header = () => {
                   )}
                 </div>
               ) : (
-                <a href="/login" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">
+                <Link to={"/login"} className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">
                   Join Us
-                </a>
+                </Link>
               )}
             </div>
           </nav>

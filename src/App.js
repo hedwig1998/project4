@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './component/common/Header';
 import Footer from './component/common/Footer';
+import ScrollToTop from './component/common/ScrollToTop';
 import Home from './page/Home';
 import Blog from './page/Blog';
 import About from './page/About';
@@ -37,6 +38,7 @@ const AppLayout = ({ children }) => {
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <AppLayout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -49,11 +51,10 @@ const App = () => {
           <Route path="/detail/:postId" element={<Detail />} />
           <Route path="/subscription" element={<Subscription/>}/>
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} /> {/* Đảm bảo có route đăng ký */}
+          <Route path="/signup" element={<Signup />} />
           <Route path='/userinfo' element={<User />} /> 
           <Route path='/top-up' element={<TopUpPage />} /> 
           <Route path='/top-up-nofi' element={<TopUpNofi />} />
-
         </Routes>
       </AppLayout>
     </Router>

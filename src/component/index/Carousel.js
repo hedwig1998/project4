@@ -1,6 +1,14 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Carousel = () => {
+  const isLoggedIn = localStorage.getItem('token');
+
+  const handleJoinClick = (e) => {
+    if (isLoggedIn) {
+      e.preventDefault();
+    }
+
+  };
   return (
     <div className="container-fluid p-0 mb-5">
       <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
@@ -14,12 +22,16 @@ const Carousel = () => {
                 <h1 className="display-2 text-white text-uppercase mb-md-4">
                   Build Your Body Strong With Gymster
                 </h1>
-                <a href="#" className="btn btn-primary py-md-3 px-md-5 me-3">
-                  Join Us
-                </a>
-                <a href="#" className="btn btn-light py-md-3 px-md-5">
+                <Link 
+                  to={isLoggedIn ? "/profile" : "/login"} 
+                  className="btn btn-primary py-md-3 px-md-5 me-3"
+                  onClick={handleJoinClick}
+                >
+                  {isLoggedIn ? "Join us" : "Join Us"}
+                </Link>
+                <Link to={"/contact"} className="btn btn-light py-md-3 px-md-5">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -33,12 +45,16 @@ const Carousel = () => {
                 <h1 className="display-2 text-white text-uppercase mb-md-4">
                   Grow Your Strength With Our Trainers
                 </h1>
-                <a href="#" className="btn btn-primary py-md-3 px-md-5 me-3">
-                  Join Us
-                </a>
-                <a href="#" className="btn btn-light py-md-3 px-md-5">
+                <Link 
+                  to={isLoggedIn ? "/profile" : "/login"} 
+                  className="btn btn-primary py-md-3 px-md-5 me-3"
+                  onClick={handleJoinClick}
+                >
+                  {isLoggedIn ? "Join us" : "Join Us"}
+                </Link>
+                <Link to={"#"} className="btn btn-light py-md-3 px-md-5">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
