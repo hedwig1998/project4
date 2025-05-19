@@ -56,8 +56,8 @@ const BlogSection = () => {
   if (latestPosts.length === 0 && !isLoading) {
     return (
       <div className="container-fluid p-5 text-center">
-        <h5 className="text-primary text-uppercase">Our Blog</h5>
-        <h1 className="display-3 text-uppercase mb-0">Latest Blog Post</h1>
+        <h5 className="text-primary text-uppercase">Blog của chúng tôi</h5>
+        <h1 className="display-3 text-uppercase mb-0">Bài đăng blog mới nhất</h1>
         <p className="mt-4">Không có bài viết nào để hiển thị.</p>
       </div>
     );
@@ -66,8 +66,8 @@ const BlogSection = () => {
   return (
     <div className="container-fluid p-5">
       <div className="mb-5 text-center">
-        <h5 className="text-primary text-uppercase">Our Blog</h5>
-        <h1 className="display-3 text-uppercase mb-0">Latest Blog Post</h1>
+        <h5 className="text-primary text-uppercase">Blog của chúng tôi</h5>
+        <h1 className="display-3 text-uppercase mb-0">Blog của chúng tôi</h1>
       </div>
       <div className="row g-5">
         {latestPosts.map((post) => (

@@ -59,15 +59,15 @@ const SignupPage = () => {
   return (
     <div className="signup-page">
       <div className="signup-container">
-        <h1 className="signup-title">Create Your Account</h1>
+        <h1 className="signup-title">Tạo tài khoản của bạn</h1>
         {error && <p className="error-message">{error}</p>}
         <form className="signup-form" onSubmit={handleSignup}>
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Tên người dùng</label>
             <input
               type="text"
               id="name"
-              placeholder="Enter your name"
+              placeholder="Nhập tên của bạn"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -78,42 +78,42 @@ const SignupPage = () => {
             <input
               type="email"
               id="email"
-              placeholder="Enter your Gmail"
+              placeholder="Nhập email của bạn"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Mật khẩu</label>
             <input
               type="password"
               id="password"
-              placeholder="Enter your password"
+              placeholder="Nhập mật khẩu của bạn"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="confirmPassword">Confirm Password</label>
+            <label htmlFor="confirmPassword">Xác nhận mật khẩu</label>
             <input
               type="password"
               id="confirmPassword"
-              placeholder="Confirm your password"
+              placeholder="Nhập lại mật khẩu của bạn"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />
           </div>
           <button type="submit" className="signup-button">
-            Sign Up
+            Đăng ký
           </button>
         </form>
         <p className="signup-prompt">
-          Already have an account?{' '}
+          Bạn đã có tài khoản?{' '}
           <button className="signup-link" onClick={() => navigate('/login')}>
-            Login
+            Chuyển về trang đăng nhập
           </button>
         </p>
       </div>

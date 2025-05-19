@@ -18,20 +18,20 @@ const Carousel = () => {
             <img className="w-100" src="img/carousel-1.jpg" alt="Image" />
             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div className="p-3" style={{ maxWidth: '900px' }}>
-                <h5 className="text-white text-uppercase">Best Gym Center</h5>
+                <h5 className="text-white text-uppercase">Trung tâm tập gym tốt nhất</h5>
                 <h1 className="display-2 text-white text-uppercase mb-md-4">
-                  Build Your Body Strong With Gymster
+                  Xây Dựng Cơ Thể Khỏe Mạnh Với Training Souls 
                 </h1>
                 <Link 
                   to={isLoggedIn ? "/profile" : "/login"} 
                   className="btn btn-primary py-md-3 px-md-5 me-3"
                   onClick={handleJoinClick}
                 >
-                  {isLoggedIn ? "Join us" : "Join Us"}
+                  {isLoggedIn ? "Tham gia" : "Tham gia"}
                 </Link>
-                <Link to={"/contact"} className="btn btn-light py-md-3 px-md-5">
+                {/* <Link to={"/contact"} className="btn btn-light py-md-3 px-md-5">
                   Contact Us
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -41,20 +41,20 @@ const Carousel = () => {
             <img className="w-100" src="img/carousel-2.jpg" alt="Image" />
             <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div className="p-3" style={{ maxWidth: '900px' }}>
-                <h5 className="text-white text-uppercase">Best Gym Center</h5>
+                <h5 className="text-white text-uppercase">Trung tâm tập gym tốt nhất</h5>
                 <h1 className="display-2 text-white text-uppercase mb-md-4">
-                  Grow Your Strength With Our Trainers
+                  Tăng cường sức mạnh của bạn với huấn luyện viên của chúng tôi                
                 </h1>
                 <Link 
                   to={isLoggedIn ? "/profile" : "/login"} 
                   className="btn btn-primary py-md-3 px-md-5 me-3"
                   onClick={handleJoinClick}
                 >
-                  {isLoggedIn ? "Join us" : "Join Us"}
+                  {isLoggedIn ? "Tham gia" : "Tham gia"}
                 </Link>
-                <Link to={"#"} className="btn btn-light py-md-3 px-md-5">
+                {/* <Link to={"#"} className="btn btn-light py-md-3 px-md-5">
                   Contact Us
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

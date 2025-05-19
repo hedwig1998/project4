@@ -13,15 +13,15 @@ const ProgramSection = () => {
           <div className="bg-light rounded text-center p-5 h-100 d-flex flex-column">
             <div>
               <i className="flaticon-six-pack display-1 text-primary"></i>
-              <h3 className="text-uppercase my-4">Body Building</h3>
+              <h3 className="text-uppercase my-4">Xây dựng cơ thể</h3>
               <p>
-                Unleash your potential and sculpt your ideal physique.
-                Our bodybuilding programs focus on developing impressive muscle mass, symmetry, and sharp definition
-                through targeted training and expert nutritional guidance.
+                Giải phóng tiềm năng của bạn và tạo nên vóc dáng lý tưởng của bạn.
+                Các chương trình thể hình của chúng tôi tập trung vào việc phát triển khối lượng cơ ấn tượng, sự cân đối và đường nét sắc nét
+                thông qua chương trình đào tạo có mục tiêu và hướng dẫn dinh dưỡng chuyên gia.
               </p>
             </div>
             <Link className="text-uppercase mt-auto" to={"/blog"}> 
-              Read More <i className="bi bi-arrow-right"></i>
+              Đọc Thêm <i className="bi bi-arrow-right"></i>
             </Link>
           </div>
         </div>
@@ -31,15 +31,15 @@ const ProgramSection = () => {
           <div className="bg-light rounded text-center p-5 h-100 d-flex flex-column">
             <div>
               <i className="flaticon-barbell display-1 text-primary"></i>
-              <h3 className="text-uppercase my-4">Weight Lifting</h3>
+              <h3 className="text-uppercase my-4">Nâng tạ</h3>
               <p>
-                Master the art and science of weight lifting to build foundational strength, power, and confidence.
-                We emphasize correct form and progressive overload for safe, impactful results,
-                whether you're a beginner or an experienced lifter.
+                Làm chủ nghệ thuật và khoa học nâng tạ để xây dựng sức mạnh, sức mạnh và sự tự tin cơ bản.
+                Chúng tôi nhấn mạnh vào hình thức đúng và quá tải tiến bộ để có kết quả an toàn, có tác động,
+                cho dù bạn là người mới bắt đầu hay người nâng tạ có kinh nghiệm.
               </p>
             </div>
             <Link className="text-uppercase mt-auto" to={"/blog"}> 
-              Read More <i className="bi bi-arrow-right"></i>
+              Đọc Thêm <i className="bi bi-arrow-right"></i>
             </Link>
           </div>
         </div>
@@ -49,26 +49,26 @@ const ProgramSection = () => {
           <div className="bg-light rounded text-center p-5 h-100 d-flex flex-column"> 
             <div>
               <i className="flaticon-bodybuilding display-1 text-primary"></i>
-              <h3 className="text-uppercase my-4">Muscle Building</h3>
+              <h3 className="text-uppercase my-4">Xây dựng cơ bắp</h3>
               <p>
-                Dedicated to increasing muscle size and volume? Our muscle building strategies
-                combine proven hypertrophy techniques, optimal workout splits,
-                and smart recovery protocols to help you pack on lean mass effectively and sustainably.
+                Dành riêng để tăng kích thước và khối lượng cơ? Các chiến lược xây dựng cơ bắp của chúng tôi
+                kết hợp các kỹ thuật phì đại đã được chứng minh, các bài tập chia nhỏ tối ưu,
+                và các giao thức phục hồi thông minh để giúp bạn tăng khối lượng nạc một cách hiệu quả và bền vững.
               </p>
             </div>
             <Link className="text-uppercase mt-auto" to={"/blog"}>
-              Read More <i className="bi bi-arrow-right"></i>
+              Đọc thêm <i className="bi bi-arrow-right"></i>
             </Link>
           </div>
         </div>
 
   
-        <div className="col-lg-12 col-md-6 text-center">
+        {/* <div className="col-lg-12 col-md-6 text-center">
           <h1 className="text-uppercase text-light mb-4">30% Discount For This Summer</h1>
-          <Link to={"/subscription"} className="btn btn-primary py-3 px-5">
+          <Link to={"/login"} className="btn btn-primary py-3 px-5">
             Become A Member
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ const LoginPage = () => {
   return (
     <div className="login-page">
       <div className="login-container">
-        <h1 className="login-title">Welcome Back</h1>
+        <h1 className="login-title">Chào mừng đến với Training Souls</h1>
         {error && <p className="error-message">{error}</p>}
         <form className="login-form" onSubmit={handleLogin}>
           <div className="form-group">
@@ -55,7 +55,7 @@ const LoginPage = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Mật khẩu</label>
             <input
               type="password"
               id="password"
@@ -65,12 +65,12 @@ const LoginPage = () => {
               required
             />
           </div>
-          <button type="submit" className="login-button">Login</button>
+          <button type="submit" className="login-button">Đăng nhập</button>
         </form>
         <p className="signup-prompt">
-          Don't have an account?{' '}
+          Bạn chưa có tài khoản?{' '}
           <button className="signup-link" onClick={handleSignup}>
-            Sign Up
+            Đăng ký
           </button>
         </p>
       </div>
