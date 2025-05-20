@@ -1,6 +1,6 @@
 /* Container chính */
 .user-info-container {
-    max-width: 600px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -47,4 +47,117 @@
     text-align: center;
     font-size: 18px;
     color: #ff4d4f;
-  }
+  }.user-info-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.user-info-subtitle {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.user-info-card { 
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile-card .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.purchased-items-list .purchased-item-card {
+  margin-bottom: 15px;
+}
+
+.purchased-item-card p {
+    margin-bottom: 8px;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: #ffebee;
+    border-radius: 5px;
+}
+.role-item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+.role-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.role-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.user-info-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.user-info-subtitle {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.purchased-items-table-container {
+  overflow-x: auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.purchased-items-table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-top: 10px;
+}
+
+.purchased-items-table th,
+.purchased-items-table td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: left;     
+  vertical-align: middle;
+}
+
+.purchased-items-table th {
+  background-color: #FB5B21;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.purchased-items-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.purchased-items-table tbody tr:hover {
+  background-color: #e9ecef;
+}
