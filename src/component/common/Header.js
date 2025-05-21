@@ -125,9 +125,9 @@ const Header = () => {
                 <Link to={"/rank"} className={`nav-item nav-link ${isActive('/rank') ? 'active' : ''}`}>
                   Xếp hạng
                 </Link>
-                <Link to={"/subscription"} className={`nav-item nav-link ${isActive('/subscription') ? 'active' : ''}`}>
+                {/* <Link to={"/subscription"} className={`nav-item nav-link ${isActive('/subscription') ? 'active' : ''}`}>
                   Subscription
-                </Link>
+                </Link> */}
               </div>
 
               {userInfo ? (
@@ -141,12 +141,12 @@ const Header = () => {
                   </button>
                   {isDropdownOpen && (
                     <div className="dropdown-menu dropdown-menu-end" style={{display: "flow-root"}}>
-                      <a className="dropdown-item" href="/userinfo">
+                      <Link className="dropdown-item" to={"/userinfo"}>
                         Thông tin
-                      </a>
-                      <a className="dropdown-item" href="">
+                      </Link>
+                      <Link className="dropdown-item">
                         Xu: {userInfo.points}
-                      </a>
+                      </Link>
                       <button className="dropdown-item" onClick={handleLogout}>
                         Đăng xuất
                       </button>

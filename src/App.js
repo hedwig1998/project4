@@ -10,28 +10,33 @@ import Classes from './page/Classes';
 import Trainers from './page/Trainers';
 import Contacts from './page/Contacts';
 import Detail from './page/Detail';
-import Login from './page/Login'; 
+import Login from './page/Login';
 import Rank from './page/Rank';
-import Signup from './page/Signup'; 
+import Signup from './page/Signup';
 import Subscription from './page/Subscription';
 import User from './page/User';
 import TopUpPage from './component/topup/TopUpPage';
 import TopUpNofi from './component/topup/TopUpNofi';
 
+import './App.css'; 
+
 const AppLayout = ({ children }) => {
   const location = useLocation();
-
-  // Danh sách các route không cần Header và Footer
   const hideHeaderFooterRoutes = ['/login', '/signup'];
-
   const shouldHideHeaderFooter = hideHeaderFooterRoutes.includes(location.pathname);
 
+  if (shouldHideHeaderFooter) {
+    return <div className="full-page-content">{children}</div>; 
+  }
+
   return (
-    <>
-      {!shouldHideHeaderFooter && <Header />}
-      {children}
-      {!shouldHideHeaderFooter && <Footer />}
-    </>
+    <div className="app-container-sticky-footer"> 
+      <Header />
+      <main className="main-content-sticky-footer"> 
+        {children}
+      </main>
+      <Footer />
+    </div>
   );
 };
 
@@ -39,24 +44,34 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop />
-      <AppLayout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/class" element={<Classes />} />
-          <Route path="/trainer" element={<Trainers />} />
-          <Route path="/contact" element={<Contacts />} />
-          <Route path="/rank" element={<Rank />} />
-          <Route path="/detail/:postId" element={<Detail />} />
-          <Route path="/subscription" element={<Subscription/>}/>
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path='/userinfo' element={<User />} /> 
-          <Route path='/top-up' element={<TopUpPage />} /> 
-          <Route path='/top-up-nofi' element={<TopUpNofi />} />
-        </Routes>
-      </AppLayout>
+      <Routes>
+        <Route path="/login" element={<AppLayout><Login /></AppLayout>} />
+        <Route path="/signup" element={<AppLayout><Signup /></AppLayout>} />
+
+
+        <Route
+          path="/*" 
+          element={
+            <AppLayout>
+              <Routes> 
+                <Route path="/" element={<Home />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/class" element={<Classes />} />
+                <Route path="/trainer" element={<Trainers />} />
+                <Route path="/contact" element={<Contacts />} />
+                <Route path="/rank" element={<Rank />} />
+                <Route path="/detail/:postId" element={<Detail />} />
+                <Route path="/subscription" element={<Subscription />} />
+                <Route path="/userinfo" element={<User />} />
+                <Route path="/top-up" element={<TopUpPage />} />
+                <Route path="/top-up-nofi" element={<TopUpNofi />} />
+                <Route path="*" element={<div>Trang không tìm thấy</div>} />
+              </Routes>
+            </AppLayout>
+          }
+        />
+      </Routes>
     </Router>
   );
 };

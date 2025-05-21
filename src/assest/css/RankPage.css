@@ -1,32 +1,92 @@
-.gold-rank {
-    background-color: rgba(255, 215, 0, 0.3);
-    /* transform: scale(1.02); */
-    position: relative;
-    /* border: 2px solid gold; */
-}
-.gold-rank td {
+.rank-medal {
+    width: 35px; 
+    height: auto;
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out; 
+  }
+  
+  .rank-display-cell {
+    line-height: 1;
+  }
+  
+  .top-rank-highlight .rank-medal {
+    width: 40px; 
+  }
+  
+  .top-rank-highlight:hover .rank-medal {
+    transform: scale(1.15); 
+  }
+  
+  .gold-rank-row {
+    /* background-color: rgba(255, 215, 0, 0.15) !important; */
     font-weight: bold;
-    color: #FB5B21 !important;
-}
-.silver-rank {
-    background-color: rgba(192, 192, 192, 0.3);
-    position: relative;
-    /* border: 2px solid silver; */
-}
-.silver-rank td {
-    color: #FB5B21 !important;
-}
-.bronze-rank {
-    background-color: rgba(205, 127, 50, 0.3);
-    position: relative;
-    /* border: 2px solid #cd7f32; */
-}
-.bronze-rank td {
-    color: #FB5B21 !important;
-}
-.normal-rank {
-    /* background-color: rgba(33, 37, 41, 0.7); */
-}
+    font-size: 1.05em;
+  }
+  
+  .silver-rank-row {
+    /* background-color: rgba(192, 192, 192, 0.15) !important; */
+    font-weight: 500;
+    font-size: 1.02em;
+  }
+  
+  .bronze-rank-row {
+    /* background-color: rgba(205, 127, 50, 0.15) !important; */
+    font-weight: 500;
+  }
+  
+
+  .top-rank-highlight {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .top-rank-highlight:hover {
+
+  }
+  
+  
+
+  .hide-on-mobile {
+  }
+  
+  .no-data-mobile {
+      display: none;
+  }
+  
+  .rankingTable.col-rank { width: 25%; } 
+  .rankingTable.col-name { width: 45%; } 
+  .rankingTable.col-totalscore { width: 30%; } 
+  
+  
+  @media (max-width: 767.98px) {
+    .hide-on-mobile {
+      display: none !important;
+    }
+  
+
+    .rankingTable.col-rank,
+    .rankingTable.col-name,
+    .rankingTable.col-totalscore {
+    }
+    
+    .no-data-desktop {
+      display: none !important;
+    }
+    .no-data-mobile {
+      display: table-cell !important;
+    }
+  
+    .table-responsive .table td,
+    .table-responsive .table th {
+      padding: 0.6rem 0.4rem;
+      font-size: 0.8rem;
+    }
+  
+    .rank-medal {
+      width: 28px;
+    }
+    .top-rank-highlight .rank-medal {
+      width: 32px;
+    }
+  }
 .rankingTable {
     text-align: center;
 }

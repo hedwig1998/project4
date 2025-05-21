@@ -58,9 +58,9 @@ const Footer = () => {
                   <Link className="text-secondary mb-2" to={"/blog"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Blog mới nhất
                   </Link>
-                  <Link className="text-secondary" to={"/subscription"}>
+                  {/* <Link className="text-secondary" to={"/subscription"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Subscriptions
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
 
@@ -83,9 +83,9 @@ const Footer = () => {
                   <Link className="text-secondary mb-2" to={"/blog"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Blog mới nhất
                   </Link>
-                  <Link className="text-secondary" to={"/subscription"}>
+                  {/* <Link className="text-secondary" to={"/subscription"}>
                     <i className="bi bi-arrow-right text-primary me-2"></i>Subscriptions
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@ const Footer = () => {
           <div className="col-lg-8">
             <div className="py-lg-4 text-center">
               <p className="text-secondary mb-0">
-                &copy; <a className="text-light fw-bold" href="#">Team 2</a>. All Rights Reserved.
+                &copy; <Link className="text-light fw-bold">Team 2</Link>. All Rights Reserved.
               </p>
             </div>
           </div>
@@ -124,9 +124,9 @@ const Footer = () => {
       </div>
 
       {/* Back to Top Button */}
-      <a href="#" className="btn btn-dark py-3 fs-4 back-to-top">
+      {/* <a href="#" className="btn btn-dark py-3 fs-4 back-to-top">
         <i className="bi bi-arrow-up"></i>
-      </a>
+      </a> */}
     </>
   );
 };
