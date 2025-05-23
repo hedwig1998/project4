@@ -153,7 +153,7 @@ const UserInfo = () => {
                     <td>{item.id}</td>
                     <td>{item.itemId}</td>
                     <td>{formatDateTime(item.purchasedAt)}</td>
-                    <td>{item.expirationDate ? formatDate(item.expirationDate) : 'Không hết hạn'}</td>
+                    <td>{item.expirationDate ? formatDate(item.expirationDate) : 'Vĩnh viễn'}</td>
                   </tr>
                 ))}
               </tbody>

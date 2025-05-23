@@ -144,9 +144,9 @@ const Header = () => {
                       <Link className="dropdown-item" to={"/userinfo"}>
                         Thông tin
                       </Link>
-                      <Link className="dropdown-item">
+                      {/* <Link className="dropdown-item">
                         Xu: {userInfo.points}
-                      </Link>
+                      </Link> */}
                       <button className="dropdown-item" onClick={handleLogout}>
                         Đăng xuất
                       </button>

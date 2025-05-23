@@ -1,163 +1,175 @@
-/* Container chính */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #FB5B21;
+  --background-color: #f4f6f8;
+  --card-background-color: #ffffff;
+  --text-color-dark: #333333;
+  --text-color-medium: #555555;
+  --text-color-light: #777777;
+  --border-color: #e0e0e0;
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body { 
+  font-family: var(--font-family-base);
+  background-color: var(--background-color);
+  color: var(--text-color-medium);
+  line-height: 1.6;
+  margin: 0;
+}
+
 .user-info-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Tiêu đề */
-  .user-info-title {
-    text-align: center;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Card thông tin người dùng */
-  .user-info-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .user-info-card p {
-    font-size: 16px;
-    color: #555;
-    margin: 10px 0;
-  }
-  
-  .user-info-card strong {
-    color: #333;
-  }
-  
-  /* Loading */
-  .loading {
-    text-align: center;
-    font-size: 18px;
-    color: #666;
-  }
-  
-  /* Error */
-  .error {
-    text-align: center;
-    font-size: 18px;
-    color: #ff4d4f;
-  }.user-info-section {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: var(--font-family-base);
+  background-color: var(--background-color); 
+  border-radius: var(--border-radius-md);
 }
 
-.user-info-subtitle {
-  font-size: 1.8em;
-  color: #333;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
-}
 
-.user-info-card { 
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.profile-card .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.purchased-items-list .purchased-item-card {
-  margin-bottom: 15px;
-}
-
-.purchased-item-card p {
-    margin-bottom: 8px;
-}
-
-.error-message {
-    color: red;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid red;
-    background-color: #ffebee;
-    border-radius: 5px;
-}
-.role-item {
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #ccc;
-}
-.role-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-.role-item ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.user-info-title {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 32px; 
+  font-weight: 600; 
+  margin-bottom: 40px; 
 }
 
 .user-info-section {
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-bottom: 35px;
+  padding: 25px; 
+  background-color: var(--card-background-color); 
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+.user-info-section:last-child {
+  margin-bottom: 0;
 }
 
 .user-info-subtitle {
-  font-size: 1.8em;
-  color: #333;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
+  font-size: 22px; 
+  color: var(--text-color-dark);
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--primary-color); 
+  font-weight: 500;
 }
 
+.user-info-card {
+  background-color: var(--card-background-color); 
+  padding: 20px; 
+  border-radius: var(--border-radius-sm);
+
+}
+
+.user-info-card p {
+  font-size: 16px;
+  color: var(--text-color-medium);
+  margin: 12px 0; 
+  line-height: 1.7;
+}
+
+.user-info-card strong {
+  color: var(--text-color-dark);
+  font-weight: 500;
+  margin-right: 8px; 
+}
+
+.profile-card .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px; 
+  margin-top: 20px;
+}
+
+.profile-card .stats-grid p {
+  background-color: #f9fafb; 
+  padding: 12px 15px;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--border-color);
+  margin: 0; 
+  font-size: 15px;
+  color: var(--text-color-medium);
+}
+
+.profile-card .stats-grid p strong {
+  color: var(--primary-color);
+  font-weight: 600;
+  /* display: block;  */
+  margin-bottom: 4px;
+  font-size: 0.9em;
+}
+
+/* === BẢNG LỊCH SỬ MUA HÀNG === */
 .purchased-items-table-container {
   overflow-x: auto;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 15px; 
 }
 
 .purchased-items-table {
   width: 100%;
-  border-collapse: collapse; 
-  margin-top: 10px;
+  border-collapse: collapse;
 }
 
 .purchased-items-table th,
 .purchased-items-table td {
-  border: 1px solid #ddd;
-  padding: 10px 12px;
-  text-align: left;     
+  border: 1px solid var(--border-color);
+  padding: 12px 15px; 
+  text-align: left;
   vertical-align: middle;
+  font-size: 15px; 
 }
 
 .purchased-items-table th {
-  background-color: #FB5B21;
+  background-color: var(--primary-color);
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 0.85em; 
+  letter-spacing: 0.5px; 
 }
 
 .purchased-items-table tbody tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: #fdfdfe; 
 }
 
 .purchased-items-table tbody tr:hover {
-  background-color: #e9ecef;
+  background-color: #f1f1f1; 
+}
+
+.loading, .error-message p { 
+  text-align: center;
+  font-size: 18px;
+  padding: 40px 20px;
+  border-radius: var(--border-radius-md);
+}
+
+.loading { 
+  color: var(--text-color-light);
+}
+.user-info-container > .loading { 
+  background-color: var(--card-background-color);
+  box-shadow: var(--shadow-md);
+}
+
+
+.error-message {
+  background-color: #fff0f0; 
+  color: #cc0000;            
+  padding: 20px;
+  border: 1px solid #ffcccc;
+  border-radius: var(--border-radius-sm);
+  text-align: center;
+  margin: 20px 0; 
+}
+.error-message p { 
+  padding: 0;
+  margin:0;
+  color: inherit; 
 }
